@@ -47,6 +47,7 @@ end
 subplot(2,1,3)
 plot([1:length(desired)],desired)
 title('Denoised Speech Signal at Adaptive Filter Output')
+
 //Calculation of Mean Squarred Error between the original speech signal and
 //Adaptive filter output
 for i =1:N-order-1
@@ -61,13 +62,13 @@ sound(x,Fs,16)
 for i = 1:1000
     j = 1;
 end
-/////////////////////////////////
+
 //Playing Noisy Speech Signal
 sound(primary,Fs,16)
 //Delay between playing sound signals
 for i = 1:1000
     j = 1;
 end
-/////////////////////////////////
+
 //Playing denoised speech signal (Adaptive Filter Output)
 sound(desired,Fs,16)
